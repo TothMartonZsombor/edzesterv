@@ -12,7 +12,7 @@ export default{
   methods:{
     rogzit(){
       this.$emit('bejegyzes', {...this.bejegyzes });
-      
+
     }
   }
 }
@@ -22,7 +22,7 @@ export default{
 <template>
   
   <div class="card" >
-    <div class="card-body">
+    <div class="card-body" style="background-color: gray;">
       <h3 class="card-title">Új gyakorlat rögzítése</h3>
       <p class="card-text">
         <label for="gyakorlat" class="form-label">Elvégzett gyakorlat</label>

@@ -1,6 +1,7 @@
 <script>
 
 import UjGyakorlat from "./components/UjGyakorlat.vue";
+import Listaz from "./components/Listaz.vue";
 
 
 export default {
@@ -11,12 +12,13 @@ export default {
     }
   },
   components: {
-    UjGyakorlat
+    UjGyakorlat,
+    Listaz
   },
   methods: {
     rogzit(bejegyzes){
       this.bejegyzesek.push(bejegyzes);
-      
+
     }
   }
 }
@@ -30,7 +32,7 @@ export default {
         <UjGyakorlat @rogzit="rogzit" :bejegyzes="bejegyzes"/>
       </div>
       <div class="col-lg-6">
-        {{ bejegyzesek }}
+        <Listaz/>
       </div>
 
   </div>
