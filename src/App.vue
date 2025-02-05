@@ -45,7 +45,8 @@ export default {
 
 <style scoped>
 
-body {
+template {
+  
   background-image: url('/src/assets/background.png');
   
 }
