@@ -6,20 +6,26 @@
 
 <template>
   
-<div class="container">
-  <div class="row">
-      <div class="col-lg-6" >
+  <div class="card" >
+    <div class="card-body">
+      <h3 class="card-title">Új gyakorlat rögzítése</h3>
+      <p class="card-text">
+        <label for="gyakorlat" class="form-label">Elvégzett gyakorlat</label>
+        <select class="form-select" aria-label="Default select example" v-model="gyakorlat">
+          <option selected value="fekvenyomas">Fekvenyomás</option>
+          <option value="guggolas">Guggolás</option>
+          <option value="lehuzas">Lehúzas csigán</option>
+          <option value="bicepsz">Bicepsz hajlítás</option>
+          <option value="tricepsz">Tricepsz lenyomás</option>
+        </select>
 
-      </div>
-      <div class="col-lg-6">
-        
-      </div>
+        <label for="ismetlesszam" class="form-label">Sorozatszám</label>
+        <input type="number" class="form-control" id="ismetlesszam">
 
+      </p>
+      
+    </div>
   </div>
-  
-
-
-</div>
 
 </template>
 
