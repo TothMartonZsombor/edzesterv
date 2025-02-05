@@ -1,6 +1,15 @@
 <script>
 
-
+export default{
+  data(){
+    return{
+      bejegyzes:{
+        gyakorlat: '',
+        ismetlesszam: 0
+      }
+    }
+  }
+}
 
 </script>
 
@@ -20,8 +29,9 @@
         </select>
 
         <label for="ismetlesszam" class="form-label">Sorozatszám</label>
-        <input type="number" class="form-control" id="ismetlesszam">
+        <input type="number" class="form-control" id="ismetlesszam" min="0" max="8" v-model="ismetlesszam">
 
+        <button type="button" class="btn btn-danger" @click="rogzit()">Rögzít</button>
       </p>
       
     </div>
