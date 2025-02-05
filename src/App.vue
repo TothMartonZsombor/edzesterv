@@ -26,12 +26,12 @@ export default {
 
 <template>
   
-<div class="container">
+<div class="container" >
   <div class="row">
-      <div class="col-lg-6" >
+      <div class="col-lg-6" style="margin-top: 10px;">
         <UjGyakorlat @rogzit="rogzit" :bejegyzes="bejegyzes"/>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" style="margin-top: 10px;">
         <Listaz/>
       </div>
 
@@ -45,6 +45,10 @@ export default {
 
 <style scoped>
 
+body {
+  background-image: url('/src/assets/background.png');
+  
+}
 
 
 </style>
