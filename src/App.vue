@@ -14,8 +14,9 @@ export default {
     UjGyakorlat
   },
   methods: {
-    rogzit(ujBejegyzes){
-      this.bejegyzes.push(bejegyzesek);
+    rogzit(bejegyzes){
+      this.bejegyzesek.push(bejegyzes);
+      
     }
   }
 }

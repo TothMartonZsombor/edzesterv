@@ -12,6 +12,7 @@ export default{
   methods:{
     rogzit(){
       this.$emit('bejegyzes', {...this.bejegyzes });
+      
     }
   }
 }
