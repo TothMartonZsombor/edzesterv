@@ -8,6 +8,11 @@ export default{
         ismetlesszam: 0
       }
     }
+  },
+  methods:{
+    rogzit(){
+      this.$emit('bejegyzes', {...this.bejegyzes });
+    }
   }
 }
 
@@ -31,7 +36,7 @@ export default{
         <label for="ismetlesszam" class="form-label">Sorozatszám</label>
         <input type="number" class="form-control" id="ismetlesszam" min="0" max="8" v-model="ismetlesszam">
 
-        <button type="button" class="btn btn-danger" @click="rogzit()">Rögzít</button>
+        <button type="button" class="btn btn-primary" @click="rogzit()">Rögzít</button>
       </p>
       
     </div>
