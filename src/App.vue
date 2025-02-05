@@ -6,11 +6,17 @@ import UjGyakorlat from "./components/UjGyakorlat.vue";
 export default {
   data(){
     return{
-      bejegyzes: []
+      bejegyzesek: []
+
     }
   },
   components: {
     UjGyakorlat
+  },
+  methods: {
+    rogzit(ujBejegyzes){
+      this.bejegyzes.push(bejegyzesek);
+    }
   }
 }
 </script>
@@ -20,10 +26,10 @@ export default {
 <div class="container">
   <div class="row">
       <div class="col-lg-6" >
-        <UjGyakorlat @rogzit="rogzit" :bejegyzes="bejyegyzes"/>
+        <UjGyakorlat @rogzit="rogzit" :bejegyzes="bejegyzes"/>
       </div>
       <div class="col-lg-6">
-        {{ bejegyzes }}
+        {{ bejegyzesek }}
       </div>
 
   </div>
